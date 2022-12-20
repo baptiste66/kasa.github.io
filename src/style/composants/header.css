@@ -1,0 +1,40 @@
+.header__menu a{
+color: #FF6060;
+font-weight: 500;
+font-size: 24px;
+margin-right: 57px;
+}
+
+
+nav{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+/*permet de garder 100px margin right */
+    margin-right: -57px;
+}
+header{
+    margin-top: 40px;
+    flex-wrap:nowrap;
+}
+
+@media all and (max-width:768px){
+   header{
+    margin-top: 20px;
+   }
+   nav{
+    margin-right: 0px;
+   }
+   
+   .header__logo{
+    Width:145px;
+    Height:47px;
+    margin-right: 50px;
+   }
+  .header__menu a{
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 0px;
+    text-transform: uppercase;
+   }
+}
