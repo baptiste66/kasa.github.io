@@ -1,30 +1,25 @@
-body {
-  margin: 0;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+   margin: 0px;
 }
 *{
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', Arial, sans-serif;
 font-style: normal;
-
 }
-.no_decoration{
+a{
    text-decoration: none;
 }
 img{
    object-fit: cover;
 }
-body{
+header,main{
    margin-left: 100px;
    margin-right: 100px;
-   font-family: 'Montserrat', Arial, sans-serif;
+   font-family: 'Montserrat'
 }
-@media all and (max-width:768px){
-   body{
+
+@media all and (max-width:900px){
+   header,main{
        margin-left: 20px;
        margin-right: 20px;
    }

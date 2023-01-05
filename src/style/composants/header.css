@@ -5,6 +5,10 @@ font-size: 24px;
 margin-right: 57px;
 }
 
+.activated{
+    text-decoration: underline;
+}
+
 
 nav{display: flex;
     justify-content: space-between;
@@ -18,7 +22,7 @@ header{
     flex-wrap:nowrap;
 }
 
-@media all and (max-width:768px){
+@media all and (max-width:550px){
    header{
     margin-top: 20px;
    }
