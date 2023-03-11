@@ -3,11 +3,17 @@
     Height:340px;
     border-radius:10px;
     margin-top: 56px;
+    transition: 500ms;
 }
 
 .card__item{
     width: 340px;
     position: relative;
+}
+.card__img:hover{
+    box-shadow: 5px 5px gray;
+    filter: brightness(85%);
+    transition: 500ms;
 }
 .card__title{
     position: absolute;
@@ -28,7 +34,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #f6f6f6;
-    column-gap: 60px;
+    column-gap: 70px;
     padding-bottom: 56px;
     border-radius: 25px;
 }

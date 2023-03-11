@@ -1,10 +1,12 @@
-import React from 'react'; //importation de react
-import {Routes, Route} from 'react-router-dom'; //importation des routes react
-import Home from '../../pages/home'; //importation de la page d'accueil
-import Error from '../../pages/404'
-import Propos from '../../pages/propos'
+import React from 'react'; 
+import {Routes, Route} from 'react-router-dom';
+import Home from '../../pages/home'; 
+import Error from '../../pages/404';
+import Propos from '../../pages/propos';
+import  Logement from '../../pages/logement';
 import '../../style/pages/home.css';
-// Fonction principale de routage
+
+
 function Routing(){
     return(
         <div>
@@ -13,10 +15,11 @@ function Routing(){
                 <Route path='/home' element={<Home />} />
                 <Route path='*' element={<Error />} />
                 <Route path='/propos' element={<Propos />} />
+                <Route path='/logement/:id'element={<Logement />}/>
             </Routes>
             
         </div>
     );
 }
 
-export default Routing; //exportation de la logique de routing
+export default Routing; 

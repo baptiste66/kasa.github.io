@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../style/composants/accordion.css';
-//import up from '../../assets/up.png';
 import down from '../../assets/down.png';
+import up from'../../assets/up.png'
 
 
+export default function Accordion(props){ 
+   const [Open, setIsOpen] = useState(false);
 
-export default function accordion(props){ 
     return(
 <section className='accordion'>
-    <div className='accordion__title'>
-        <h3>{props.title}</h3>    
-        <img className='down' src= {down} alt= "down"></img>
+    <div className='accordion__container' onClick={() => setIsOpen(!Open)}>
+        <h2>{props.title}</h2>   
+        <span className='up__down'> 
+            {Open ? <button><img src={up} className='up' alt='up'></img></button>  
+            :<button><img className='down' src={down}  alt= "down"></img></button>}
+        </span>
     </div>
-    <div className='accordion__txt'>
-<p>{props.content}</p>
-</div>
+    {Open &&
+        <div className='accordion__txt'>
+            <p>{props.content}</p>
+        </div>
+    }
 </section>
     )
 }

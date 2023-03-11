@@ -1,9 +1,9 @@
-import React from 'react'; //importation de react
+import React from 'react';
 import logo from "../../assets/LOGO_footer_desktop.png";
-import '../../style/composants/header.css'
-import '../../style/composants/footer.css'
+import '../../style/header/header.css'
+import '../../style/footer/footer.css'
 
-export default function Footer(){ //fonction principale pour l'affichage du banner
+export default function Footer(){ 
     
 
 

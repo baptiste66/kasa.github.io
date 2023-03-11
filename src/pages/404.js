@@ -9,7 +9,7 @@ export default function error(){ //fonction principale pour l'affichage de la Ho
     <Header/>
         <main className='error'> 
             <div className='message'>
-            <p ><span className='error__number'>404</span></p>
+            <h1><span className='error__number'>404</span></h1>
                 <div className='error__txt'>
                     <p className='txt'>Oups! La page que </p>
                     <p className='txt'>vous demandez n'existe pas.</p>

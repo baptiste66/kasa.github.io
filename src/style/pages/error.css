@@ -25,7 +25,7 @@ flex-direction: row;
 .message a{
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 100px;
     margin-bottom: 159px;
 }
 .txt{
@@ -34,7 +34,7 @@ flex-direction: row;
 .underline{
     text-decoration: underline;
 }
-@media all and (max-width:950px){
+@media all and (max-width:1085px){
     .error__number{display: flex;
         font-weight: 700;
 font-size: 96px;
