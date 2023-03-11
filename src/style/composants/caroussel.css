@@ -26,6 +26,7 @@
     display: flex;
     Width:100%;
 Height:415px;
+min-height: 415px;
 border-radius:25px;
 }
 .slide__number{
