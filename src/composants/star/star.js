@@ -1,13 +1,13 @@
 import React from 'react';
 import starColor from '../../assets/starColor.png';
 import starWhite from '../../assets/starWhite.png';
-
+import '../../style/composants/star.css'
 
 export default function Star (props){
     const star=props.star
     const range = [1, 2, 3, 4, 5];
     return (
-        <div>
+        <div className='star'>
             {range.map((rangeElem, key) => 
                 star >= rangeElem ? (
                     <img className='starColor' src={starColor} alt='étoile coloré' key={key} />

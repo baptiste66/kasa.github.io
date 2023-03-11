@@ -4,12 +4,33 @@
     justify-content: space-between;
   }
   .left{
-    flex-basis: 60%;
+    flex-basis: 70%;
 }
 .right{
-    flex-basis: 30%;
+    flex-basis: 10%;
 }
-
+.inline{
+    display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.inline img{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+.inline p{font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color:#FF6060 ;
+    margin-top: 30px;
+}
+.star{
+    display: flex;
+    align-items: center;
+}
 .location h1{
     color:#FF6060 ;
     font-family: 'Montserrat';
@@ -17,25 +38,39 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 142.6%;
+    margin-top: 30px;
 }
 .location h2{
+    margin-top: -30px;
+    color:#FF6060 ;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 142.6%;
+margin-bottom: 20px;
 }
-.tag {
-    margin-bottom: 200px;
+.tag {display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    margin-bottom: 24px;
 }
-.tag p{display: inline-block;
+.tag p{ display: inline-block;
     background-color:#FF6060 ;
+    justify-content: center;
     white-space: nowrap;
+    text-align: center;
     color: white;
     padding: 10px;
     margin-right: 10px;
-    width: 115pxpx;
+    width: 20%;
+    min-width: 150px;
     border-radius: 10px;
+    margin-top: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .accordion-log{
@@ -43,6 +78,7 @@ line-height: 142.6%;
     grid-template-columns: repeat(2, 45%);
     gap: 100px;
     border-radius: 10px;
+    
 }
 
 .accordion__container{
@@ -70,13 +106,7 @@ font-size: 18px;
 }
 .accordion__txt ul{
     padding-left: 0;
-}
-.description{
-    grid-column: 2 / 3;
-    
-}
-.equipements{
-    grid-column: 3/4;
+    margin: 0;
 }
 
 
@@ -88,4 +118,58 @@ font-size: 18px;
     gap: 10px;
     margin-bottom: 50px;
 }
+}
+@media all and (max-width:700px){
+    .location h1{margin-top: 15px;
+    font-size: 18px;
+margin-bottom: 0;
+}
+    .location h2{
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: none;
+        flex-basis: 100%;
+      }
+      .left{
+        flex-basis: 100%;
+    }
+      .info__product .right .star {
+        order: 0;
+        
+      }
+      .info__product .right .inline {
+        order: 1;
+       margin-left: auto;
+       margin-right: 0;
+       flex-basis: 10%;
+      }
+      .inline p{
+        margin-top: 0;
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+      .inline img{
+        height: 34px;
+        width: 34px;
+      }
+      .star{margin-top: 24px;
+        margin-bottom: 24px;
+        height: 15px;
+        width: 15px;
+      }
+      .tag{
+        margin-bottom: 0;
+      }
+      .tag p{text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        min-width: 110px;
+      }
 }

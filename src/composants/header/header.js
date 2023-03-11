@@ -12,7 +12,7 @@ export default function Header(){
         
         <div className='header__menu'>
               
-             <span><NavLink  to="/home"className={({ isActive }) => (isActive ? "activated" : "notActivated")} >
+             <span><NavLink  to="/"className={({ isActive }) => (isActive ? "activated" : "notActivated")} >
               Accueil
             </NavLink></span>
             <NavLink to="/propos" className={({ isActive }) => (isActive ? "activated" : "notActivated")}>

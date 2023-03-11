@@ -6,7 +6,6 @@ import up from'../../assets/up.png'
 
 export default function Accordion(props){ 
    const [Open, setIsOpen] = useState(false);
-
     return(
 <section className='accordion'>
     <div className='accordion__container' onClick={() => setIsOpen(!Open)}>

@@ -14,7 +14,7 @@ export default function error(){ //fonction principale pour l'affichage de la Ho
                     <p className='txt'>Oups! La page que </p>
                     <p className='txt'>vous demandez n'existe pas.</p>
                 </div>
-                <a className='underline' href='/home'>Retourner sur la page d’accueil</a>
+                <a className='underline' href='/'>Retourner sur la page d’accueil</a>
             </div>
             
         </main>

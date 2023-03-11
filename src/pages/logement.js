@@ -35,14 +35,14 @@ export default function Logement(){
             </div>
             </div>
            <div className='right'>
-            <p>{host.name}</p>
-            <img src={host.picture} alt='loueur du logement sélectionner'></img>
+            <span className='inline'><p>{host.name}</p>
+            <img src={host.picture} alt='loueur du logement sélectionner'></img></span>
             <Star star={rating}/>
            </div>
             </div>
            <div className='accordion-log'>
-            <Accordion title='description' content={description} />
-            <Accordion title='equipements' content={
+            <Accordion title='Description' content={description} />
+            <Accordion title='Equipements' content={
                             <ul>
                                 {equipments.map((equipment) => (
                                     <li key={equipment}>{equipment}</li>
