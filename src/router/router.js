@@ -6,12 +6,13 @@ import About from '../pages/about';
 import  Logement from '../pages/logement';
 import '../style/pages/home.css';
 
-
+// deux fois home pour le mettre en page de démarrage et pour renvoyer page err quand change l'url
 function Routing(){
     return(
         <div>
            
             <Routes>
+                <Route path="/" element={<Home />} />
                 <Route path='/home' element={<Home />} />
                 <Route path='*' element={<Error />} />
                 <Route path='/about' element={<About />} />
