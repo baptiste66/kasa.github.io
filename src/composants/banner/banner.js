@@ -5,7 +5,7 @@
  import"../../style/composants/banner.css"
 
  export default function Banner({ origin }) {
-    const homeURL = document.location.pathname === '/';
+    const homeURL = document.location.pathname === '/home';
     const bannerImg = homeURL ? HomeBanner : AboutBanner; // en fonction de la page demandée
     const bannerImgAlt = homeURL ? 'paysage de mer et falaises' : 'paysage de lac et montagnes';
     const bannerText = homeURL ? <h1 className="banner__txt">Chez vous, partout et ailleurs</h1> : null;
