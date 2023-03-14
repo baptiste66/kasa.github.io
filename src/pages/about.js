@@ -3,9 +3,9 @@ import Header from '../composants/header/header';
 import Footer from '../composants/footer/footer';
 import Banner from '../composants/banner/banner'; 
 import Accordion from '../composants/Accordion/Accordion';
-import '../style/pages/propos.css'
+import '../style/pages/about.css'
 
-export default function propos(){ //fonction principale pour l'affichage de la Home page
+export default function about(){ //fonction principale pour l'affichage de la Home page
     return( 
     <div>
     <Header/>
