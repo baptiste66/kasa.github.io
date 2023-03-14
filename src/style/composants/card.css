@@ -7,7 +7,7 @@
 }
 
 .card__item{
-    width: 300px;
+    width: 340px;
     position: relative;
 }
 .card__img:hover{
@@ -34,10 +34,16 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #f6f6f6;
-    column-gap: 50px;
+    column-gap: 70px;
     padding-bottom: 56px;
     border-radius: 25px;
 }
+@media all and (max-width:1000px){
+    .card{
+        column-gap:20px ;
+    }
+}
+
 @media all and (max-width:768px){
     .card{
         background-color: white;
@@ -45,7 +51,9 @@
     }
     .card__img{
         margin-top: 20px;
-        Width:335px;
         Height:255px;
+    }
+    .card__item{
+        width: 100%;
     }
 }

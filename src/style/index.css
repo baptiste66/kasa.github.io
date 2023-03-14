@@ -23,7 +23,7 @@ header,main{
    font-family: 'Montserrat'
 }
 
-@media all and (max-width:900px){
+@media all and (max-width:1000px){
    header,main{
        margin-left: 20px;
        margin-right: 20px;
