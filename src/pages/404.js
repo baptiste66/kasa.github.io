@@ -3,7 +3,7 @@ import Header from '../composants/header/header';
 import Footer from '../composants/footer/footer';
 import '../style/pages/error.css'
 
-export default function error(){ //fonction principale pour l'affichage de la Home page
+export default function error(){ 
     return( 
     <div>
     <Header/>
