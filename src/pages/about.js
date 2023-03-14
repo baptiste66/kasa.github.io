@@ -1,8 +1,8 @@
 import React from 'react'; //importation de react
-import Header from '../composants/header/header';
-import Footer from '../composants/footer/footer';
-import Banner from '../composants/banner/banner'; 
-import Accordion from '../composants/Accordion/Accordion';
+import Header from '../components/header/header';
+import Footer from '../components/footer/footer';
+import Banner from '../components/banner/banner'; 
+import Accordion from '../components/Accordion/Accordion';
 import '../style/pages/about.css'
 
 export default function about(){ //fonction principale pour l'affichage de la Home page

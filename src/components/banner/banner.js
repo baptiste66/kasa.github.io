@@ -2,7 +2,7 @@
  import React from 'react'; 
  import HomeBanner from '../../assets/banner_desktop.png'; 
  import AboutBanner from '../../assets/Banner_propos_desktop.png'; 
- import"../../style/composants/banner.css"
+ import"../../style/components/banner.css"
 
  export default function Banner({ origin }) {
     const homeURL = document.location.pathname === '/home';

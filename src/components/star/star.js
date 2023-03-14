@@ -1,7 +1,7 @@
 import React from 'react';
 import starColor from '../../assets/starColor.png';
 import starWhite from '../../assets/starWhite.png';
-import '../../style/composants/star.css'
+import '../../style/components/star.css'
 
 export default function Star (props){
     const star=props.star

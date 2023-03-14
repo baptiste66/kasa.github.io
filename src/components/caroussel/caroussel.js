@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Data from '../../datas/data'
-import '../../style/composants/caroussel.css'
+import '../../style/components/caroussel.css'
 import left from '../../assets/left.png'
 import right from '../../assets/right.png'
 import { useParams } from "react-router-dom";

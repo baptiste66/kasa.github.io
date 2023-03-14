@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../style/composants/accordion.css';
+import '../../style/components/accordion.css';
 import down from '../../assets/down.png';
 import up from'../../assets/up.png'
 

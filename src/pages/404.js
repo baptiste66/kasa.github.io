@@ -1,6 +1,6 @@
 import React from 'react'; //importation de react
-import Header from '../composants/header/header';
-import Footer from '../composants/footer/footer';
+import Header from '../components/header/header';
+import Footer from '../components/footer/footer';
 import '../style/pages/error.css'
 
 export default function error(){ 

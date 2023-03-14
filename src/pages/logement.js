@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from '../composants/header/header';
-import Footer from '../composants/footer/footer';
+import Header from '../components/header/header';
+import Footer from '../components/footer/footer';
 import Data from '../datas/data'
 import Error from '../pages/404'
 import { useParams } from 'react-router-dom';
-import Caroussel from '../composants/caroussel/caroussel'
-import Accordion from '../composants/Accordion/Accordion'
-import Star from '../composants/star/star'
+import Caroussel from '../components/caroussel/caroussel'
+import Accordion from '../components/Accordion/Accordion'
+import Star from '../components/star/star'
 import '../style/pages/logement.css'
-import'../style/composants/caroussel.css'
+import'../style/components/caroussel.css'
 
 export default function Logement() {
     const { id } = useParams();
