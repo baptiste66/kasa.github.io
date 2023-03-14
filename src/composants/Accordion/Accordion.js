@@ -17,7 +17,7 @@ export default function Accordion(props){
     </div>
     {Open &&
         <div className='accordion__txt'>
-            <p>{props.content}</p>
+            {props.children}
         </div>
     }
 </section>

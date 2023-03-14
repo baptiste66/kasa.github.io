@@ -7,7 +7,7 @@
 }
 
 .card__item{
-    width: 340px;
+    width: 300px;
     position: relative;
 }
 .card__img:hover{
@@ -34,7 +34,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #f6f6f6;
-    column-gap: 70px;
+    column-gap: 50px;
     padding-bottom: 56px;
     border-radius: 25px;
 }

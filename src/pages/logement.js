@@ -43,17 +43,14 @@ export default function Logement() {
               </div>
             </div>
             <div className="accordion-log">
-              <Accordion title="Description" content={infoProduct.description} />
-              <Accordion
-                title="Equipements"
-                content={
-                  <ul>
-                    {infoProduct.equipments.map((equipment) => (
-                      <li key={equipment}>{equipment}</li>
-                    ))}
-                  </ul>
-                }
-              />
+              <Accordion title="Description"><p>{infoProduct.description}</p></Accordion> 
+                <Accordion title="Equipements">
+                <ul>
+                  {infoProduct.equipments.map((equipment) => (
+                    <li key={equipment}>{equipment}</li>
+                  ))}
+                </ul>
+              </Accordion>
             </div>
           </section>
         </main>
