@@ -28,7 +28,7 @@ header{
     margin-right: 0px;
    }
 
-@media all and (max-width:650px){
+@media all and (max-width:764px){
     .header__menu span{
         margin-right: 10px;
     }
